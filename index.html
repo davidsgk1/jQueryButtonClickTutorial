@@ -2,21 +2,30 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>jQuery Button Click Tutorial</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  	<p>Hello, world!</p>
+    <button>Run jQuery!</button>
+    <p id="size">Change this text size.</p>
+    <p class="color">Change this font color.</p>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">  <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("body").css("background-color", "#abb8ce");
+                $("#size").css("font-size", "2em");
+                $(".color").css("color", "#cc2f26");
+            });
+        });
+    </script>
 </body>
 
 </html>
